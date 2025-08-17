@@ -1,27 +1,145 @@
 *{
-    padding: o;
-    margin: o;
-    color: white;
-    background-color: #3a3238;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, Arial;
 }
-#navbar{
-    height: 60px;
-    /* display: inline-block; */
-    /* position: fixed; */
+body{
+    background-color: #3a3238;
+    color: #eee;
+    line-height: 1.6;
 
-    background-color: transparent;
-    border: 0.5 solid transparent;
 }
 a{
-    margin-right: 50px;
     text-decoration: none;
-    background-color: inherit;
     color: burlywood;
+    text-transform: uppercase;
+    transition: background-color 0.3s, color 0.3s;
 }
-/*  */
+a:hover{
+    color: white;
+    background-color: darkgreen;
+    border-radius: 4px;
+}
+#navbar{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #222;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 
-/* #f5e3e0 - skin
-#e8b4bc - light pinkish
-#d282a6 - creamy-pink 
-#6e4555 - maroon
-#3a3238 - blackish-brown */
+}
+#navbar a{
+    padding: 8px 15px;
+    border-radius: 4px;
+}
+.menubar{
+    font-size: medium;   
+    padding: 6px 12px;
+    background: none;
+    border: 1px solid burlywood;
+    color: burlywood;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.home-content{
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: rgba(0,0, 0, 0.4);
+    border-radius: 8px;
+    color: #eee;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+
+}
+.crdback{
+    width: 220px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #444;
+    box-shadow: 0 4px 8px rgba(0,0, 0, 0.3);
+}
+.crdimg, .crdtxt{
+    padding: 10px;
+    text-align: center;
+
+}
+.crdimg{
+    background-color: antiquewhite;
+}
+.crdtxt{
+    background-color: #555;
+    color: #fff;
+}
+.eduframe{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+
+}
+.eduframe > div{
+    height: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+#mriet{
+    background-image: url(/images/mriet_campus.png);
+}
+#mjp{
+    background-image: url(/images/mjp_campus.jpg);
+}
+#stan{
+    background-image: url(/images/stan_campus2.jpg);
+}
+#details{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0,0, 0, 0.6);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+}
+.campuslogo{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 2px solid white;
+    transition: transform 0.3s ease;
+
+}
+.campuslogo:hover{
+    transform: scale(1.2);
+}
+@media (max-width: 768px){
+    #navbar{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .eduframe>div{
+        height: 200px;
+    }
+}
