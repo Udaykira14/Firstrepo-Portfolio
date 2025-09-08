@@ -3,21 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Build</title>
-   <link rel="stylesheet" href="style.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Portfolio + Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header>
         <a href="#" class="logo">Anonthoju Uday Kiran</a>
         <nav>
-            <a href="#" class="active"> Home</a>
-            <a href="#about_me">About me</a>
+            <a href="#" class="active">Home</a>
+            <a href="#about_me">About</a>
             <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
             <a href="#education">Education</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
+
     <section class="home">
         <div class="homeimg">
             <img src="home_img.png" alt="An Avatar">
@@ -25,31 +28,77 @@
         <div class="home_content">
             <h1>Hi, it's <span>Uday Kiran Anonthoju</span></h1>
             <h3 class="typing_text">I'm a <span></span> </h3>
-            <p>Hello! I'm a <strong>Senior Undergraduate</strong> in B.Tech (Computer Science & Engineering). 
-            I'm passionate about software development, web technologies, and continuously improving my technical skills.</p>
+            <p>Senior Undergraduate in <b>B.Tech (Computer Science & Engineering)</b>. Passionate about compiler design, cloud security, and building modern, responsive applications.</p>
 
             <div class="social_icons">
-                <a href="#"> <i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"> <i class="fa-brands fa-github"></i> </a>
-                <a href="#"> <i class="fa-brands fa-figma"></i> </a>
+                <a href="https://www.linkedin.com/in/your-id" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/yourusername" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.youtube.com/@USFunFactory" target="_blank"><i class="fa-brands fa-youtube"></i></a>
             </div>
-            <a href="C:\Users\saich\OneDrive\Desktop\Uday\resume\HV FORMAT.docx" class="btn">Download resume</a>
-
+            <a href="Uday_Kiran_Resume.docx" class="btn" download>Download Resume</a>
         </div>
     </section>
-    <section id="skills">
-        <!--mention skills -->
+
+    <section id="about_me">
+        <h2>About Me</h2>
+        <p>I enjoy <b>solving problems</b>, building practical projects, and learning new technologies. My short-term goal is to <i>gain hands-on experience</i> through challenging projects, while my long-term goal is to become a highly skilled software engineer contributing to impactful solutions.</p>
     </section>
-    <section id="education">
-        <!-- study section -->
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li><b>Languages/Tools:</b> Python, C, JavaScript, HTML/CSS, Git & GitHub, VS Code, GCC</li>
+            <li><b>Web:</b> Responsive layouts, accessibility, Bootstrap, Tailwind (beginner)</li>
+            <li><b>CS & Cloud:</b> Compiler basics, Cloud Security fundamentals, Shared Responsibility Model</li>
+            <li><b>Data/Office:</b> Excel/Sheets formatting, charts, automation</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
         <div class="education">
-            <div class="heading"><h2>Study Profile</h2></div>
+            <div class="educards">
+                <h3>Mini Programming Language (Python)</h3>
+                <p>Implemented a toy interpreter with lexer, parser, AST, and REPL using Python.</p>
+            </div>
+            <div class="educards">
+                <h3>Bike-Themed Portfolio Website</h3>
+                <p>Personal site inspired by motorbike dashboard with responsive design.</p>
+            </div>
+            <div class="educards">
+                <h3>Cloud Security Myths</h3>
+                <p>Prepared a myth-vs-fact slide deck and Shared Responsibility Model guide.</p>
+            </div>
+            <div class="educards">
+                <h3>GATE CS/IT Study Tracker</h3>
+                <p>Excel-based learning tracker with analytics and mock test performance.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="education">
+            <div class="educards">
+                <h3>Content Creator — U&S Fun Factory</h3>
+                <p>Produce kid-friendly animations, storyboarding, editing, and publishing.</p>
+            </div>
+            <div class="educards">
+                <h3>Technical Problem-Solving</h3>
+                <p>Resolved proxy and MS Office update issues, documented fixes.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="education">
+            <div class="heading"><h2>Education</h2></div>
             <div class="educards">
                 <img class="ins" src="/mriet_logo.jpg" alt="logo">
                 <div>
                     <h3>M.R.I.E.T</h3>
-                    <P>Maisammaguda</P>
-                    <p>C.S.E</p>
+                    <p>Maisammaguda</p>
+                    <p>B.Tech C.S.E</p>
                     <p>2022-Present</p>
                 </div>
             </div>
@@ -58,58 +107,39 @@
                 <div>
                     <h3>MJP</h3>
                     <p>Doulthabad</p>
-                    <p>Math Phy. Chem.</p>
-                    <p>2022</p>
+                    <p>Maths, Physics, Chemistry</p>
+                    <p>2020-2022</p>
                 </div>
             </div>
             <div class="educards">
                 <img class="ins" src="/stan_logo1.jpg" alt="logo">
                 <div>
-                    <h3>St Ann's [Em] School</h3>
+                    <h3>St Ann's [EM] School</h3>
                     <p>Madinaguda</p>
+                    <p>SSC</p>
                     <p>2020</p>
                 </div>
             </div>
         </div>
     </section>
-    <section id="about_me">
-        <h2>More about ~Me</h2>
-            <p>I enjoy <b>solving problems</b>, building practical projects, and learning new programming languages. 
-                My <strong>short-term goal</strong> is to <i>gain hands-on experience</i> through challenging real-world projects, 
-                while my <strong>long-term goal</strong> is to become a highly skilled software engineer
-                 contributing to impactful solutions.</p>
 
-            <h2>Core Competencies</h2>
-            <ul>
-                <li>Web Development (HTML, CSS, JavaScript)</li>
-                <li>Java Programming</li>
-                <li>Python for Automation & Data Processing</li>
-                <li>Problem Solving & Algorithm Design</li>
-            </ul>
-        <a href="#" class="btn">Hire me</a>
-    </section>
     <footer id="contact">
-        <h2>Contact Me</h2> 
+        <h2>Contact Me</h2>
         <p>Feel free to reach out for collaborations or just a friendly hello!</p>
-<div id="form">
-    <form action="#" method="post" class="contact-form">
-        <label for="name"><i class="fa-solid fa-user"></i> Name:</label>
-        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <div id="form">
+            <form action="#" method="post" class="contact-form">
+                <label for="name"><i class="fa-solid fa-user"></i> Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
 
-        <label for="email"><i class="fa-solid fa-envelope"></i> Email:</label>
-        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                <label for="email"><i class="fa-solid fa-envelope"></i> Email:</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required>
 
-        <label for="message"><i class="fa-solid fa-comment-dots"></i> Message:</label>
-        <textarea id="message" name="message" placeholder="Type your message here..." rows="4" required></textarea>
+                <label for="message"><i class="fa-solid fa-comment-dots"></i> Message:</label>
+                <textarea id="message" name="message" placeholder="Type your message here..." rows="4" required></textarea>
 
-        <button type="submit" class="btn"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
-    </form>
-</div>        
+                <button type="submit" class="btn"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+            </form>
+        </div>
     </footer>
 </body>
-
-<!-- https://www.mriet.ac.in/img/LOGO.jpg -->
-<!-- mjp logo addr https://mjptbcwrdcwomenwargal.ac.in/static/media/mjplogo.29580c652b209c5eb05a.png -->
-<!-- stan logo addr https://yt3.googleusercontent.com/ytc/AIdro_nIAdYmQ0Cgy8qMvvSGAX80Lp8j14UhEurmGPV_KP1VAQ=s900-c-k-c0x00ffffff-no-rj -->
-
 </html>
