@@ -69,6 +69,7 @@ nav a:hover, nav a.active{
         flex-wrap: wrap;
     }
     nav{
+        display: none;
         position: relative; /* Prevent overlay */
         top: auto;
         right: auto;
