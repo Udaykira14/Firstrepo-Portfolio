@@ -28,7 +28,7 @@ header{
     left: 0;
     width: 100%;
     padding: 1rem 10%;
-    background: rgb(168, 244, 3);
+    background: rgb(244, 3, 3);
     backdrop-filter: blur(6px);
     display: flex;
     justify-content: space-between;
