@@ -11,18 +11,23 @@
 </head>
 <body>
     <header>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
         <a href="#" class="logo">Anonthoju Uday Kiran</a>
         <nav>
             <a href="#" class="active">Home</a>
-            <a href="#about_me">About</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#experience">Experience</a>
             <a href="#education">Education</a>
+            <a href="#about_me">About</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
-
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', () => {
+            document.querySelector('nav').classList.toggle('active');
+        });
+    </script>
     <section class="home">
         <div class="homeimg">
             <img src="home_img.png" alt="An Avatar">
@@ -33,19 +38,15 @@
             <p>Senior Undergraduate in <b>B.Tech (Computer Science & Engineering)</b>. Passionate about compiler design, cloud security, and building modern, responsive applications.</p>
 
             <div class="social_icons">
-                <a href="https://www.linkedin.com/in/your-id" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/yourusername" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://in.linkedin.com/in/uday-kiran-anonthoju-913716280" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Udaykira14" target="_blank"><i class="fa-brands fa-github"></i></a>
                 <a href="https://www.youtube.com/@USFunFactory" target="_blank"><i class="fa-brands fa-youtube"></i></a>
             </div>
             <a href="Uday_Kiran_Resume.docx" class="btn" download>Download Resume</a>
         </div>
     </section>
 
-    <section id="about_me">
-        <h2>About Me</h2>
-        <p>I enjoy <b>solving problems</b>, building practical projects, and learning new technologies. My short-term goal is to <i>gain hands-on experience</i> through challenging projects, while my long-term goal is to become a highly skilled software engineer contributing to impactful solutions.</p>
-    </section>
-
+    
     <section id="skills">
         <h2>Skills</h2>
         <ul>
@@ -55,7 +56,7 @@
             <li><b>Data/Office:</b> Excel/Sheets formatting, charts, automation</li>
         </ul>
     </section>
-
+    
     <section id="projects">
         <h2>Projects</h2>
         <div class="education">
@@ -77,21 +78,7 @@
             </div>
         </div>
     </section>
-
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="education">
-            <div class="educards">
-                <h3>Bike-Themed Portfolio Website</h3>
-                <p>Personal site inspired by motorbike dashboard with responsive design.</p>
-            </div>
-            <div class="educards">
-                <h3>Technical Problem-Solving</h3>
-                <p>Resolved proxy and MS Office update issues, documented fixes.</p>
-            </div>
-        </div>
-    </section>
-
+    
     <section id="education">
         <div class="education">
             <div class="heading"><h2>Education</h2></div>
@@ -124,7 +111,27 @@
             </div>
         </div>
     </section>
-
+    
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="education">
+            <div class="educards">
+                <h3>Bike-Themed Portfolio Website</h3>
+                <p>Personal site inspired by motorbike dashboard with responsive design.</p>
+            </div>
+            <div class="educards">
+                <h3>Technical Problem-Solving</h3>
+                <p>Resolved proxy and MS Office update issues, documented fixes.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about_me">
+        <h2>More about Me</h2>
+        <p>I am a senior undergraduate passionate about compiler design, cloud security, and building modern, responsive applications. I love exploring new technologies and sharing knowledge through projects and collaboration.</p>
+        <p>I enjoy <b>solving problems</b>, building practical projects, and learning new technologies. My short-term goal is to <i>gain hands-on experience</i> through challenging projects, while my long-term goal is to become a highly skilled software engineer contributing to impactful solutions.</p>
+    </section>
+    
     <footer id="contact">
         <h2>Contact Me</h2>
         <p>Feel free to reach out for collaborations or just a friendly hello!</p>
@@ -143,5 +150,6 @@
             </form>
         </div>
     </footer>
+
 </body>
 </html>
