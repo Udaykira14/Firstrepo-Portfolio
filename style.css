@@ -230,13 +230,21 @@ footer p{ margin-bottom: 1.5rem; color: #ffb703; }
     box-shadow: 0 4px 20px rgba(0,0,0,0.5);
 }
 .contact-form label{ font-size: 1.3rem; color: #ffb703; }
-.contact-form input, .contact-form textarea{
+.contact-form input, .contact-form textarea,.contact-form a{
     padding: 1rem;
     border-radius: 0.5rem;
     border: 1px solid #00f7ff;
     background: rgba(0,0,0,0.3);
     color: #fff;
     font-size: 1.2rem;
+}
+.gform{
+    font-weight: bolder;
+    font-size: 2rem;
+    color: rgb(15, 226, 78);
+    text-align: center;
+    text-decoration: underline;
+    
 }
 .contact-form input:focus, .contact-form textarea:focus{
     border: 2px solid #ffb703;
